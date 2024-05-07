@@ -1,0 +1,124 @@
+/* Basic styles */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url('uxie.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Header styles */
+.header {
+  background-color: #5e257a;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.header.fixed-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #f9d423;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Banner styles */
+.banner {
+  color: #ffffff;
+}
+
+.banner h1 {
+  font-weight: bold;
+}
+
+.banner h2 {
+  font-weight: lighter;
+}
+.banner .col-md-6 img {
+  margin-top: 20px; /* Sesuaikan nilai ini sesuai kebutuhan */
+}
+
+.btn-primary {
+  margin-top: 20px; /* Menambahkan jarak antara tombol dan teks di atasnya */
+  background-color: #FFA366; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border-color: #FFA366; /* Warna garis tombol */
+}
+
+.btn-primary:hover {
+  background-color: #440F61; /* Warna latar belakang tombol saat hover */
+  border-color: #440F61; /* Warna garis tombol saat hover */
+  color: rgb(255, 255, 255); /* Warna teks tombol saat hover */
+}
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #FFA366 !important; /* Kembalikan warna latar belakang tombol */
+  border-color: #FFA366 !important; /* Kembalikan warna garis tombol */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Animasi untuk teks */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animasi untuk gambar */
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terapkan animasi ke teks */
+.banner .col-md-6 h1,
+.banner .col-md-6 h4,
+.banner .col-md-6 .btn {
+  animation: slideInFromLeft 2.5s ease-out;
+}
+
+/* Terapkan animasi ke gambar */
+.banner .col-md-6 .img-fluid {
+  animation: slideInFromBottom 2.5s ease-out;
+}
+

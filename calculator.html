@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyek Uas Kalkulus 2</title>
+  <title>Matrix Calculator</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="calculator.css">
@@ -31,9 +31,6 @@
                 <a class="nav-link" href="calculator.html">Calculator</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tutorial.html">Tutorial</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
             </ul>
@@ -42,3 +39,56 @@
       </div>
     </div>
   </header>
+  <div class="container center-content">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Panduan penggunaan -->
+        <div class="user-guide">
+          
+          <h3>Panduan</h3>
+          <p>
+            1. Langkah pertama adalah menentukan nilai ordo matriks, yaitu jumlah baris (Rows) dan kolom (Columns) matriks. Anda dapat memasukkan nilai ordo yang diinginkan pada kolom input Rows dan Columns, kemudian klik tombol "Generate Matrix"          
+          </p>
+          <p>
+            2. Setelah matriks terbuat, masukkan nilai-nilai matriks sesuai dengan ordo yang telah ditentukan. Pastikan setiap sel matriks telah terisi dengan nilai numerik.
+          </p>
+          <p>
+            3. Setelah matriks terisi, klik tombol "Calculate Determinant" untuk menghitung determinan matriks. Hasilnya akan ditampilkan di bagian hasil di bawah.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="col-md-6">
+            <h3>Determinant</h3>
+            <h4>Row x Column</h4>
+            <div id="matrixInput" class="initial-matrix">
+              <div class="row">
+                <input type="number" id="rows" name="rows" class="form-control" value="3">
+              </div>
+              <div class="row">
+                <input type="number" id="cols" name="cols" class="form-control" value="3">
+              </div>
+            </div>
+            <button id="generateBtn" class="btn btn-primary mt-2 generate-btn">Generate Matrix</button>
+            <div class="button-group">
+              <button id="calculateBtn" class="btn btn-success calculate-btn">Calculate</button>
+              <button id="resetBtn" class="btn btn-danger reset-btn">Reset</button>
+            </div>
+            <h5>Result</h5>
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div>
+      <p class="text-center">
+        <span class="copyright-symbol">&copy;</span> Copyright MK Project 2024
+      </p>
+    </div>
+  </footer>
+  <script src="calculator.js"></script>
+</body>
+</html>

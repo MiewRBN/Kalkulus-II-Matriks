@@ -17,7 +17,7 @@ body {
 
 .container {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   height: 100vh;
 }
@@ -48,4 +48,42 @@ body {
 .logo {
   width: 40px;
   margin-right: 10px;
+}
+
+/* Atur lebar galeri */
+.carousel {
+  width: 100%; /* Ubah sesuai kebutuhan */
+  margin: 0 auto; /* Membuat galeri berada di tengah */
+}
+
+/* Atur ukuran gambar */
+.carousel-item img {
+  max-width: 100%; /* Lebar maksimum gambar */
+  height: auto; /* Biarkan ketinggian gambar disesuaikan secara otomatis */
+  display: block; /* Menghapus spasi tambahan di sekitar gambar */
+  margin: 0 auto; /* Membuat gambar berada di tengah */
+}
+
+/* Atur lebar tombol prev dan next */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Ubah sesuai kebutuhan */
+}
+
+/* Atur posisi tombol prev dan next */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  transform: scale(2); /* Ubah ukuran ikon */
+}
+.footer {
+  background-color: #5e257a; /* Warna latar belakang footer */
+  color: white; /* Warna teks di footer */
+  padding: 20px 0; /* Padding atas dan bawah footer */
+  position: relative; /* Tetap di bagian bawah layar */
+  width: 100%; /* Lebar penuh */
+  bottom: 0; /* Meletakkan footer di bagian bawah */
+}
+
+.footer p {
+  margin: 0; /* Menghapus margin bawa default */
 }

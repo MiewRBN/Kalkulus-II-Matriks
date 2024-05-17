@@ -122,3 +122,18 @@ body {
   animation: slideInFromBottom 2.5s ease-out;
 }
 
+/* Footer styles */
+.footer {
+  background-color: #5e257a; /* Warna latar belakang footer */
+  color: white; /* Warna teks di footer */
+  padding: 20px 0; /* Padding atas dan bawah footer */
+  position: relative; /* Tetap di bagian bawah layar */
+  width: 100%; /* Lebar penuh */
+  bottom: 0; /* Meletakkan footer di bagian bawah */
+}
+
+.footer p {
+  margin: 0; /* Menghapus margin bawa default */
+}
+
+

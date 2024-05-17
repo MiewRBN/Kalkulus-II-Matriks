@@ -1,40 +1,91 @@
 /* Basic styles */
 html,
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
+ body {
+   font-family: "Poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+ }
 
-body {
-  background-image: url('uxie.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+ body {
+   background-image: url('uxie.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: repeat;
+ }
 
-.container {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  height: 100vh;
-}
+ .container {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   min-height: 100vh; 
+ }
 
-/* Header styles */
-.header {
-  background-color: #5e257a;
-  padding: 20px;
-  transition: background-color 0.3s;
-}
+ /* Header styles */
+ .header {
+   background-color: #5e257a;
+   padding: 20px;
+   transition: background-color 0.3s;
+ }
 
-.header.fixed-top {
+ .header.fixed-top {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+}
+
+.glassmorphism-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('uxie.png') ; /* Warna latar belakang semi-transparan */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.glassmorphism-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('bener\ 2.png') ; /* Warna latar belakang semi-transparan */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.glassmorphism-container {
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 800px; /* Sesuaikan dengan lebar yang diinginkan */
+  height: 600px; /* Sesuaikan dengan tinggi yang diinginkan */
+  padding: 20px; /* Sesuaikan dengan padding yang diinginkan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Untuk styling konten di dalam container */
+.glassmorphism-container .content {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Jika ingin menambahkan transisi saat hover */
+.glassmorphism-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .nav-link {
@@ -48,4 +99,18 @@ body {
 .logo {
   width: 40px;
   margin-right: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #5e257a; /* Warna latar belakang footer */
+  color: white; /* Warna teks di footer */
+  padding: 20px 0; /* Padding atas dan bawah footer */
+  position: relative; /* Tetap di bagian bawah layar */
+  width: 100%; /* Lebar penuh */
+  bottom: 0; /* Meletakkan footer di bagian bawah */
+}
+
+.footer p {
+  margin: 0; /* Menghapus margin bawa default */
 }

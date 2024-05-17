@@ -1,7 +1,7 @@
-/* Basic styles */
+/* Basic styles for HTML and body elements */
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; /* Mengatur font untuk seluruh halaman */
   margin: 0;
   padding: 0;
   width: 100%;
@@ -9,43 +9,275 @@ body {
 }
 
 body {
-  background-image: url('uxie.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('uxie.png'); /* Mengatur gambar latar belakang */
+  background-size: cover; /* Mengatur ukuran gambar latar agar menutupi seluruh area */
+  background-position: center; /* Mengatur posisi gambar latar di tengah */
+  background-repeat: no-repeat; /* Mengatur gambar latar agar tidak mengulang */
 }
 
+/* Container style */
 .container {
   display: flex;
-  justify-content: left;
-  align-items: center;
-  height: 100vh;
+  justify-content: center; /* Mengatur konten agar berada di tengah secara horizontal */
+  align-items: center; /* Mengatur konten agar berada di tengah secara vertikal */
+  height: 100vh; /* Mengatur tinggi container sama dengan tinggi viewport */
 }
 
 /* Header styles */
 .header {
-  background-color: #5e257a;
-  padding: 20px;
-  transition: background-color 0.3s;
+  background-color: #5e257a; /* Mengatur warna latar belakang header */
+  padding: 20px; /* Mengatur padding di sekitar konten header */
+  transition: background-color 0.3s; /* Menambahkan efek transisi pada perubahan warna latar */
 }
 
 .header.fixed-top {
-  position: fixed;
-  width: 100%;
+  position: fixed; /* Mengatur posisi tetap untuk header */
+  width: 100%; /* Mengatur lebar header penuh */
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1000; /* Mengatur tingkat tumpang tindih header */
 }
 
 .nav-link {
-  color: #fff;
+  color: #fff; /* Mengatur warna teks tautan navigasi */
 }
 
 .nav-link:hover {
-  color: #f9d423;
+  color: #f9d423; /* Mengatur warna teks tautan saat hover */
 }
 
 .logo {
-  width: 40px;
-  margin-right: 10px;
+  width: 40px; /* Mengatur lebar logo */
+  margin-right: 10px; /* Mengatur jarak kanan logo */
+}
+
+/* Center content style */
+.center-content {
+  display: flex;
+  justify-content: center; /* Mengatur konten agar berada di tengah secara horizontal */
+  align-items: center; /* Mengatur konten agar berada di tengah secara vertikal */
+  height: 100vh; /* Mengatur tinggi container sama dengan tinggi viewport */
+}
+
+/* Menambahkan lebar khusus untuk wide-container */
+.wide-container {
+  width: 100%; /* Mengatur lebar container menjadi 80% dari lebar viewport */
+  max-width: 1200px; /* Mengatur lebar maksimal container */
+}
+
+/* Card style */
+.card {
+  width: 40%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  background: #15001f;
+  box-shadow: rgba(50, 50, 93, 0.25) 8px 10px 50px 8px inset;
+  padding: 20px;
+  word-wrap: normal;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border: 3px solid #c042ff;
+}
+
+label {
+  font-weight: 600; /* Mengatur ketebalan font label */
+  margin-right: 5px; /* Mengatur margin kanan label */
+}
+
+input[type="number"] {
+  width: 100px; /* Mengatur lebar input number */
+  text-align: center; /* Mengatur teks input number agar berada di tengah */
+}
+
+/* Matrix input container style */
+#matrixInput {
+  display: flex;
+  flex-direction: row; /* Mengatur elemen di dalamnya secara horizontal */
+  gap: 10px; /* Mengatur jarak antar elemen */
+  margin-bottom: 5px; /* Mengatur margin bawah */
+  margin-left: 10px;
+}
+
+/* Row style */
+.row {
+  display: flex;
+  justify-content: center; /* Mengatur elemen di dalamnya memiliki jarak antar satu sama lain */
+  margin-bottom: 1px; /* Mengatur margin bawah */
+  margin-top: 5px;
+}
+
+input[type="number"] {
+  width: 50px; /* Mengatur lebar input number */
+  text-align: center; /* Mengatur teks input number agar berada di tengah */
+}
+
+/* Form control style */
+.rows-input {
+  width: 50px; /* Mengatur lebar input untuk baris */
+}
+
+.cols-input {
+  width: 50px; /* Mengatur lebar input untuk kolom */
+}
+
+/* Style untuk elemen label dan input di dalam matrixInput */
+#matrixInput .row {
+  display: flex;
+  align-items: center; /* Mengatur elemen di dalamnya agar sejajar secara vertikal */
+  margin-bottom: 20px; /* Mengatur margin bawah antar baris */
+}
+
+/* Mengatur jarak antara label dan input di dalam matrixInput */
+#matrixInput label,
+#matrixInput input[type="number"] {
+  margin-right: 10px; /* Mengatur margin kanan */
+}
+
+/* Button group style untuk menempatkan tombol secara horizontal */
+.button-group {
+  display: flex;
+  gap: 0px; /* Mengatur jarak antar tombol */
+}
+
+h3 {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+h4 {
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #fff;
+}
+
+h5 {
+  margin-top: 20px;
+  color: white;
+}
+
+p {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* CSS untuk mengatur ukuran tombol secara terpisah */
+
+/* Mengatur ukuran tombol Generate Matrix */
+
+/* Mengatur ukuran tombol Calculate Determinant */
+/* CSS untuk mengatur ukuran tombol secara terpisah */
+
+/* Mengatur ukuran tombol Generate Matrix */
+/* Mengatur ukuran tombol Generate Matrix */
+/* Mengatur ukuran tombol Generate Matrix */
+.generate-btn {
+  background-color: #313575;
+  border: none; /* Mengatur ketebalan dan jenis border */
+  height: 40px;
+  width: 163px;
+  font-size: 15px;
+  border-radius: 0px; /* Menambahkan nilai border radius */
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.generate-btn:hover {
+  background-color: #131751; /* Warna tombol saat dihover */
+}
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #313575 !important; /* Kembalikan warna latar belakang tombol */
+  border-color: #131751 !important; /* Kembalikan warna garis tombol */
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* Mengatur ukuran tombol Calculate Determinant */
+.calculate-btn {
+  background-color: #F68318;
+  border: none; /* Mengatur ketebalan dan jenis border */
+  height: 40px;
+  width: 130px;
+  font-size: 16px;
+  border-radius: 0px; /* Menambahkan nilai border radius */
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.calculate-btn:hover {
+  background-color: #984f0b; /* Warna tombol saat dihover */
+}
+.btn-success:active,
+.btn-success:focus {
+  background-color: #F68318 !important; /* Ubah warna latar belakang tombol */
+  border-color: #984f0b !important; /* Ubah warna garis tombol */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Mengatur ukuran tombol Reset */
+.reset-btn {
+  background-color: #b22e37;
+  border: 2px;
+  height: 40px;
+  width: 70px;
+  font-size: 14px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.reset-btn:hover {
+  background-color: #7c1c23;
+}
+.reset-btn:active {
+  background-color: #f44336; /* Mengatur warna tombol saat ditekan */
+}
+
+.user-guide {
+  color: white;
+  text-align: justify;
+}
+.col-md-4 {
+  background: #15001f;
+  border: 3px solid #c042ff;
+  font-size: 14px;
+  font-family: monospace;
+  overflow: auto;
+}
+.col-md-8 {
+  margin-top: 0px;
+  margin-right: -379px;
+}
+.col-md-6 {
+  width: 500px;
+}
+.inital-matrix {
+  border: 3px solid #c042ff;
+}
+
+/* Mengatur warna teks hasil menjadi putih */
+#result {
+  color: white;
+}
+/* Footer styles */
+.footer {
+  background-color: #5e257a; /* Warna latar belakang footer */
+  color: white; /* Warna teks di footer */
+  padding: 20px 0; /* Padding atas dan bawah footer */
+  position: relative; /* Tetap di bagian bawah layar */
+  width: 100%; /* Lebar penuh */
+  bottom: 0; /* Meletakkan footer di bagian bawah */
+}
+
+.footer p {
+  margin: 0; /* Menghapus margin bawa default */
 }
